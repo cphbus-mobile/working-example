@@ -11,34 +11,32 @@
     tools:context="dk.cphbusiness.template.MainActivity">
 
     <TextView
-        android:text="Hello"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="220dp"
         android:id="@+id/message"
-        android:textSize="36sp" />
-
-    <Button
-        android:text="And me"
+        android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_alignStart="@+id/button1"
-        android:layout_marginTop="30dp"
-        android:id="@+id/button2"
-        android:onClick="button2Clicked"
-        android:layout_alignRight="@+id/button1"
-        android:layout_alignEnd="@+id/button1" />
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp" />
 
     <Button
-        android:text="Press me"
+        android:id="@+id/toastButton"
+        android:text="Toast Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:id="@+id/button1"
         android:layout_below="@+id/message"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        />
+
+    <Button
+        android:id="@+id/showJavaButton"
+        android:text="Show Java Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toastButton"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="showJavaClicked"
+        />
 </RelativeLayout>

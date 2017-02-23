@@ -11,32 +11,32 @@
     tools:context="dk.cphbusiness.template.JavaActivity">
 
     <TextView
+        android:id="@+id/message"
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/message"
-        android:textSize="20sp" />
+        android:textSize="24sp" />
 
     <Button
-        android:text="Button"
+        android:id="@+id/toastButton"
+        android:text="Toast Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/message"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp"
-        android:id="@+id/button1" />
+        android:layout_marginTop="24dp"
+        />
 
     <Button
-        android:text="Button"
+        android:id="@+id/goKotlinButton"
+        android:text="Show Kotlin Activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_alignStart="@+id/button1"
-        android:layout_marginTop="27dp"
-        android:id="@+id/button2"
-        android:onClick="button2Clicked"
+        android:layout_below="@+id/toastButton"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="showKotlinClicked"
         />
 </RelativeLayout>

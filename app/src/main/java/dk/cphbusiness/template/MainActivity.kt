@@ -1,6 +1,7 @@
 package dk.cphbusiness.template
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
@@ -12,12 +13,12 @@ class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        message.text = "Hello from Kotlin"
-        button1.onClick { toast("Button 1 was clicked") }
+        message.text = "A Kotlin Activity"
+        toastButton.onClick { toast("Toast button clicked") }
         }
 
-    fun button2Clicked(view: View) {
-        message.text = "Button 2 was clicked"
+    fun showJavaClicked(view: View) {
+        startActivity(Intent(this, JavaActivity::class.java))
         }
 
     }

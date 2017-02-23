@@ -14,7 +14,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="dk.cphbusiness.template.JavaActivity"></activity>
+        <activity android:name="dk.cphbusiness.template.JavaActivity">
+            <!--intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter-->
+        </activity>
     </application>
 
 </manifest>
