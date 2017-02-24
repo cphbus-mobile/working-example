@@ -33,6 +33,7 @@ class Person(val firstName: String, var lastName: String) {
         get() = "$firstName $lastName"
         set(value) { lastName = value.substringAfterLast(" ") }
     val pets = mutableListOf<Pet>()
+    override fun toString() = name
     }
 
 fun main(args: Array<String>) {
